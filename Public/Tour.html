@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+  <style>
+    @media only screen and(max-width:720px){
+        .subnav{
+            margin-left:50%;
+
+        }
+        .card{
+            margin-left:50%;
+            width:200px;
+            height: 500px;
+        }
+    
+        
+    
+    }
+    @media only screen and(min-width:720px){
+        .subnav{
+            margin-left:50%;
+
+        }
+        .card{
+        
+            width:400px;
+            height: 500px;
+        }
+    
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .card, .card-img-top {
+            border-radius: 0 !important; 
+        }
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .card{
+        height: 500px;
+       
+        
+    }
+    .card:hover .card-img-top {
+        filter:brightness(50%)
+    }
+    .card:hover{
+        box-shadow: 5px 5px 5px 5px white;
+        transform: translateY(-10px);
+        }
+
+
+    .best-seller {
+        background-color: orange;
+        color: white;
+        padding: 5px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .card-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        color: grey;
+    }
+
+    .rating {
+        color: orange;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://png.pngtree.com/png-clipart/20230916/original/pngtree-sticker-with-a-graphic-representation-of-the-mountain-vector-png-image_12232411.png" alt="Logo" height="50" weight="50" class="d-inline-block align-top me-2">
+            <strong>HIKING<span class="text-muted">TOUR</span></strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav subnav">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold active" href="Tour.html">TOUR LIST</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="destination.html">DESTINATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="Contact.html">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="bg-light d-flex justify-content-center align-items-center" style="background-image: url('https://images.unsplash.com/photo-1502809027077-657ca9c746af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; height:500px; ">
+        <div class="text-center text-white">
+            <h1 class="display-1 fw-bold">
+              <span class="text-warning">TOUR LIST</span>
+              
+            </h1>
+              <p class="text-dark fw-bold">Discover the Adventure with Hiking</p>
+
+    </section>
+    
+    <div class="container-fluid">
+        <div class="row  mt-5 ms-5">
+            <div class="col-12 col-md-4">
+                <div class="card ">
+                    <div class="best-seller">Best Seller</div>
+                    <img src="https://vl-prod-static.b-cdn.net/system/images/000/499/170/53782406c63445c16b271f95048685eb/x600gt/1512035243_Ladakh-Home_jpg.jpg?1662883026" class="card-img-top img-fluid" alt="Tour du Mont Blanc Express">
+                    <div class="card-body">
+                        <h5 class="card-title">Leh Ladakh</h5>
+                        <p><span class="old-price">10,000/-</span> <span class="card-price">7,000/-</span></p>
+                        <p><i class="far fa-clock"></i> 9 Days / 8 Nights</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kashmir</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 12+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (3 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJBhdDIu0Am51pnULC_0JXQYnVwaY-PQ64lw&s" class="card-img-top" alt="St. Moritz Ski Packages">
+                    <div class="card-body">
+                        <h5 class="card-title">Wayanad</h5>
+                        <p><span class="old-price">12,000/-</span> <span class="card-price">9000/-</span></p>
+                        <p><i class="far fa-clock"></i> 1 Day / About 8 hours</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Kerala</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 12+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9734;</span> (1 Review)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <div class="best-seller">Hot trip</div>
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/c7e7a137-be09-47dc-94f1-ffe502fcf081_Har+Ki+Dun_HKD_Ruinsara+Tal+-+Subhrajyoti+Das+-+Valley+of+Gods.jpg?auto=compress,format&rect=0,111,1600,775&w=1600&h=775&org_if_sml=1" class="card-img-top" alt="Switzerland Hiking the Matterhorn">
+                    <div class="card-body">
+                        <h5 class="card-title">HAR KI DUN</h5>
+                        <p><span class="old-price">15,000/-</span> <span class="card-price">12,500/-</span></p>
+                        <p><i class="far fa-clock"></i> 5 Days / 4 Nights</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Uttarakhand</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 18+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;<span class="empty">&#9734;&#9734;</span>(1 Review)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row  mt-5 ms-5">
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <div class="best-seller">Best Seller</div>
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/cbc94e8d-5ea1-4b16-ada5-259f7530ce67_Deoriatal+Chandrashila-Manas+Chowdhury-view+from+Deoriatal+during+sunset.jpg?auto=compress,format&org_if_sml=1" class="card-img-top" alt="Tour du Mont Blanc Express">
+                    <div class="card-body">
+                        <h5 class="card-title">CHANDRASHILA TREK</h5>
+                        <p><span class="old-price">10,000/-</span> <span class="card-price">7,000/-</span></p>
+                        <p><i class="far fa-clock"></i> 9 Days / 8 Nights</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kashmir</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 12+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (3 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-4">
+                <div class="card">
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/8bc49475-6d6c-499e-a6d7-d7dffced9307_Deoriatal+Chandrasila_DC_Indiahikes_Jothiranjan_+%28298%29.jpg?auto=compress,format&w=1920&org_if_sml=1" class="card-img-top" alt="St. Moritz Ski Packages">
+                    <div class="card-body">
+                        <h5 class="card-title">RANTHAN KHARAK TREK</h5>
+                        <p><span class="old-price">12,000/-</span> <span class="card-price">9000/-</span></p>
+                        <p><i class="far fa-clock"></i> 1 Day / About 8 hours</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Himachal</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 12+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9734;</span> (1 Review)</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-4 ">
+                <div class="card">
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/dedfee68-0f23-4ddd-8b20-f4aabf9504fe_03+-+March+-+Deoriatal-Chandrashila+-+Indiahikes+-+Vivek+Saini+-+Annual+Calendar+2023+-+Desk+-+Edited.jpg?auto=compress,format&w=1920&org_if_sml=1" class="card-img-top" alt="Switzerland Hiking the Matterhorn">
+                    <div class="card-body">
+                        <h5 class="card-title">PHULARA RIDGE TREK</h5>
+                        <p><span class="old-price">15,000/-</span> <span class="card-price">12,500/-</span></p>
+                        <p><i class="far fa-clock"></i> 5 Days / 4 Nights</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Uttarakhand</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 18+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;<span class="empty">&#9734;&#9734;</span>(1 Review)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row  mt-5 ms-5">
+            <div class="col-12 col-md-4 ">
+                <div class="card ">
+                    
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/ZerszHUurf2G3NbC_RupinPass_RP_Jothiranjan_Snowbridge_RupinWaterfall_Campsite_Snowbridge_-4-.jpg?auto=compress,format&rect=0,125,1600,800&w=1200&h=600&org_if_sml=1" class="card-img-top" alt="Tour du Mont Blanc Express">
+                    <div class="card-body">
+                        <h5 class="card-title">RUPIN PASS TREK</h5>
+                        <p><span class="old-price">10,000/-</span> <span class="card-price">7,000/-</span></p>
+                        <p><i class="far fa-clock"></i> 9 Days / 8 Nights</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kashmir</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 12+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (3 Reviews)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <div class="best-seller">Hot trip</div>
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/c3000c9e-cf5f-4069-bdce-5f1c475b45b3_Sandakphu_SKP_May+2019+-+Indiahikes+-+Swathi+-+Sabargram+Campsite+-+Sleeping+Buddha+Mountain+Range_sunrise_mountains_.jpg?auto=compress,format&org_if_sml=1" class="card-img-top" alt="St. Moritz Ski Packages">
+                    <div class="card-body">
+                        <h5 class="card-title">SANDAKPU PHALUT TREK</h5>
+                        <p><span class="old-price">12,000/-</span> <span class="card-price">9000/-</span></p>
+                        <p><i class="far fa-clock"></i> 1 Day / About 8 hours</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i>Himachal</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 12+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;&#9733;<span class="empty">&#9734;</span> (1 Review)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <img src="https://cvsqtgaxsa.cloudimg.io/https://images.prismic.io/indiahike/83088e19-cbfa-4bc0-a7d0-0cd7b65f45bf_Dayara-bugyal_winter_Indiahikes_.jpg?auto=format,compress?auto=compress,format&org_if_sml=1" class="card-img-top" alt="Switzerland Hiking the Matterhorn">
+                    <div class="card-body">
+                        <h5 class="card-title">DAYARA BHUGAL TREK</h5>
+                        <p><span class="old-price">15,000/-</span> <span class="card-price">12,500/-</span></p>
+                        <p><i class="far fa-clock"></i> 5 Days / 4 Nights</p>
+                        <p><i class="far fa-calendar-alt"></i> Availability: Jan 18' - Dec 19'</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Uttarakhand</p>
+                        <p><i class="fas fa-users"></i> Max People: 40 | Min Age: 18+</p>
+                        <p class="rating">&#9733;&#9733;&#9733;<span class="empty">&#9734;&#9734;</span>(1 Review)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="bg-dark text-light py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h6 class="text-uppercase fw-bold">Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Jammu</strong> <i class="bi bi-telephone"></i>+91 9123456891</li>
+                        <li><strong>Kerala</strong> <i class="bi bi-telephone"></i>+91 8123456898</li>
+                        <li><strong>Andhrapradesh</strong> <i class="bi bi-telephone"></i>+91 7812345967</li>
+                        <li><i class="bi bi-envelope"></i> Ask@traveltourtheme.com</li>
+                    </ul>
+                </div>
+    
+                <!-- About Us -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h6 class="text-uppercase fw-bold">About Us</h6>
+                    <ul class="list-unstyled">
+                        <li>Our Story</li>
+                        <li>Travel Blog & Tips</li>
+                        <li>Working With Us</li>
+                        <li>Be Our Partner</li>
+                    </ul>
+                </div>
+    
+                <!-- Support -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h6 class="text-uppercase fw-bold">Support</h6>
+                    <ul class="list-unstyled">
+                        <li>Customer Support</li>
+                        <li>Privacy & Policy</li>
+                        <li>Contact Channels</li>
+                    </ul>
+                </div>
+    
+                <!-- Payment Info -->
+                <div class="col-12 col-md-3 mb-3">
+                    <h6 class="text-uppercase fw-bold">Pay Safely With Us</h6>
+                    <p>The payment is encrypted and transmitted securely with an SSL protocol.</p>
+                    <img src="visa.png" alt="Visa">
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>© 2024 Travel Tour All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>    
